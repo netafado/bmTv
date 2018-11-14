@@ -1,0 +1,98 @@
+extends ./_layouts/tv.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+    .container-fuid
+        .row
+            img.center-block(src="img/logo-topo.png", alt="logo BM", style="margin-top:20px")
+    .container-fluid
+        .row.text-center#sliderH2(style="margin-top: 60px")
+            h2 Indicadores de venda
+            h2 Inscritos por região
+    .container-fluid#slider
+        .item            
+            .fullScreen.relative
+    
+                .cards-bm.text-center
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores Em elaboração
+                        .w-img
+                            img.center-block.img-responsive(src="img/indicador-1.png", alt="")
+                        h4.nu-indicadores.text-center 97
+                        h3.nu-name.text-center pedidos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores Em elaboração
+                        .w-img
+                            img.center-block.img-responsive(src="img/indicador-1.png", alt="")
+                        h4.nu-indicadores.text-center 97
+                        h3.nu-name.text-center pedidos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores Em análise
+                        .w-img
+                            img.center-block.img-responsive(src="img/indicador-3.png", alt="")
+                        h4.nu-indicadores.text-center 97
+                        h3.nu-name.text-center pedidos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores Logística
+                        .w-img
+                            img.center-block.img-responsive(src="img/indicador-1.png", alt="")
+                        h4.nu-indicadores.text-center 97
+                        h3.nu-name.text-center pedidos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores Faturado
+                        .w-img
+                            img.center-block.img-responsive(src="img/indicador-6.png", alt="")
+                        h4.nu-indicadores.text-center 97
+                        h3.nu-name.text-center pedidos
+
+        .item
+
+            .fullScreen            
+                .cards-bm.text-center
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores ONTEM
+                        h4.nu-indicadores.text-center.ind-number 97
+                        h3.nu-name.text-center inscritos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores HOJE
+                        h4.nu-indicadores.text-center.ind-number 97
+                        h3.nu-name.text-center inscritos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores SEMANA
+                        h4.nu-indicadores.text-center.ind-number 97
+                        h3.nu-name.text-center inscritos 
+                .cards-bm
+                    ._card-bm.well.bg-inverse
+                        .bg-main
+                            h3.text-center.text-bold.text-inverse.title-indicadores MÊS
+                        h4.nu-indicadores.text-center.ind-number 97
+                        h3.nu-name.text-center inscritos
+         
+    
+
+    
+
+block append scriptsJS
+    script(src="js/app.js")
+    script(src="js/youtube.js")
+
+
